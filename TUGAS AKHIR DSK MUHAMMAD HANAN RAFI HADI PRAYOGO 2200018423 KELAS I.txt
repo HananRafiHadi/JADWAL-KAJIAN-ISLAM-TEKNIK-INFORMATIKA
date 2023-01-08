@@ -43,6 +43,19 @@ INT 21H
 MOV DL,' '
 INT 21H  
 
+MOV DL,'K'
+INT 21H
+MOV DL,'E'
+INT 21H
+MOV DL,'L'
+INT 21H
+MOV DL,'A'
+INT 21H
+MOV DL,'S'
+INT 21H  
+
+MOV DL,'I'
+INT 21H
 
 MOV DL,'I'
 INT 21H
@@ -193,6 +206,61 @@ INT 21H
 MOV DL,0DH     
 INT 21H         
 MOV DL,0AH   
+INT 21H
+
+MOV DL,'T'
+INT 21H
+MOV DL,'E'
+INT 21H
+MOV DL,'K'
+INT 21H
+MOV DL,'A'
+INT 21H
+MOV DL,'N'
+INT 21H
+MOV DL,' '
+INT 21H
+MOV DL,'A'
+INT 21H
+MOV DL,'N'
+INT 21H
+MOV DL,'G'
+INT 21H
+MOV DL,'K'
+INT 21H
+MOV DL,'A'
+INT 21H
+MOV DL,'('
+INT 21H
+MOV DL,'3'
+INT 21H
+MOV DL,')'
+INT 21H
+MOV DL,'='
+INT 21H
+MOV DL,'K'
+INT 21H
+MOV DL,'E'
+INT 21H
+MOV DL,'L'
+INT 21H
+MOV DL,'O'
+INT 21H
+MOV DL,'M'
+INT 21H
+MOV DL,'P'
+INT 21H
+MOV DL,'O'
+INT 21H
+MOV DL,'K'
+INT 21H
+MOV DL,' '
+INT 21H
+MOV DL,'3'
+INT 21H
+MOV DL,0DH     
+INT 21H         
+MOV DL,0AH   
 INT 21H         
 MOV DL,0DH
 INT 21H
@@ -202,9 +270,9 @@ INT 21H
 
 jmp mulai
                                                                       
-msg1: db 0dh,0ah," #HARI              KITAB KAJIAN                     WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| FATHUL QARIB                         | 07.00-12.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| FASHOLATAN                           | 08.40-10.20 |  B.2.4  |",0dh,0ah,"  *RABU   :| ARBAIN NAWAWI                        | 12.30-15.00 |  B.2.2  |",0dh,0ah,"  *KAMIS  :| AL JURUMIYAH                         | 07.00-08.40 |  B.2.4  |",0dh,0ah,"  *JUMAT  :| SHOROF                               | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *SABTU  :| SAFINATUN NAJAH                      | 07.00-08.40 |  B.4.1  |",0dh,0ah,"  *AHAD   :| FIQIH                                | 07.00-08.40 |  D.2.J  |",0dh,0ah,'$'
-msg2: db 0dh,0ah," #HARI              KITAB KAJIAN                     WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| FATHUL QARIB                         | 07.00-12.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| FASHOLATAN                           | 13.00-15.00 |  B.2.4  |",0dh,0ah,"  *RABU   :| ARBAIN NAWAWI                        | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *KAMIS  :| AL JURUMIYAH                         | 07.00-08.40 |  B.2.4  |",0dh,0ah,"  *JUMAT  :| SHOROF                               | 12.30-03.00 |  B.2.2  |",0dh,0ah,"  *SABTU  :| SAFINATUN NAJAH                      | 12.30-03.00 |  B.4.1  |",0dh,0ah,"  *AHAD   :| FIQIH                                | 07.00-08.40 |  D.2.J  |",0dh,0ah,'$'
-
+msg1: db 0dh,0ah," #HARI              KITAB KAJIAN                     WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| FATHUL QARIB                         | 07.00-10.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| FASHOLATAN                           | 08.40-10.40 |  B.2.4  |",0dh,0ah,"  *RABU   :| ARBAIN NAWAWI                        | 12.30-15.00 |  B.2.2  |",0dh,0ah,"  *KAMIS  :| AL JURUMIYAH                         | 07.00-08.40 |  B.2.4  |",0dh,0ah,"  *JUMAT  :| SHOROF                               | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *SABTU  :| SAFINATUN NAJAH                      | 07.00-08.40 |  B.4.1  |",0dh,0ah,"  *AHAD   :| FIQIH                                | 12.00-14.30 |  D.2.J  |",0dh,0ah,'$'
+msg2: db 0dh,0ah," #HARI              KITAB KAJIAN                     WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| FATHUL QARIB                         | 12.00-15.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| FASHOLATAN                           | 12.40-14.40 |  B.2.4  |",0dh,0ah,"  *RABU   :| ARBAIN NAWAWI                        | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *KAMIS  :| AL JURUMIYAH                         | 09.00-10.40 |  B.2.4  |",0dh,0ah,"  *JUMAT  :| SHOROF                               | 12.30-15.00 |  B.2.2  |",0dh,0ah,"  *SABTU  :| SAFINATUN NAJAH                      | 12.40-14.40 |  B.4.1  |",0dh,0ah,"  *AHAD   :| FIQIH                                | 08.00-09.30 |  D.2.J  |",0dh,0ah,'$'
+msg3: db 0dh,0ah," #HARI              KITAB KAJIAN                     WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| FATHUL QARIB                         | 15.00-18.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| FASHOLATAN                           | 15.40-17.40 |  B.2.4  |",0dh,0ah,"  *RABU   :| ARBAIN NAWAWI                        | 07.30-09.00 |  B.2.2  |",0dh,0ah,"  *KAMIS  :| AL JURUMIYAH                         | 11.00-12.40 |  B.2.4  |",0dh,0ah,"  *JUMAT  :| SHOROF                               | 07.30-09.00 |  B.2.2  |",0dh,0ah,"  *SABTU  :| SAFINATUN NAJAH                      | 09.00-10.40 |  B.4.1  |",0dh,0ah,"  *AHAD   :| FIQIH                                | 06.30-08.00 |  D.2.J  |",0dh,0ah,'$'
                                              
 mulai:
 
@@ -217,7 +285,9 @@ je kel_1
 cmp al, '2'     
 je kel_2        
 
-
+cmp al, '3'     
+je kel_3  
+ 
 jmp exit        
 exit:           
 ret
@@ -229,6 +299,11 @@ kel_1:
     jmp mulai       
 kel_2:
     mov dx, msg2    
+    mov ah, 9       
+    int 21h         
+    jmp mulai      
+kel_3:
+    mov dx, msg3    
     mov ah, 9       
     int 21h         
     jmp mulai      
